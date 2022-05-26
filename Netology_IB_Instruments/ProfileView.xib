@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ProfileView" customModule="Netology_IB_Instruments" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" id="0sb-ey-Iwe">
+                    <rect key="frame" x="20" y="44" width="190" height="126"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Джеймс Рейнор" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LR2-42-EJD">
+                    <rect key="frame" x="218" y="49" width="173" height="30"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" systemColor="linkColor"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="20 Августа 2470 Года" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Yd-pC-itA">
+                    <rect key="frame" x="218" y="91" width="173" height="30"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" systemColor="linkColor"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="v4x-br-4p4">
+                    <rect key="frame" x="16" y="178" width="378" height="684"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" systemColor="systemGray6Color"/>
+                    <string key="text">Джим Рейнор родился на планете Шайло 20 августа 2470 года. В юности он обучался в охоте и стрельбе. Отец Трейси научил его драться и давать отпор хулиганам. Позже Рейнор сказал, что отец научил его, где нельзя пересекать черту и стоять на своем. Хорошо учился в школе и помогал родителям в сельскохозяйственных делах.
+
+Восемнадцать лет своей жизни он провел на родине, работая на ферме. В эти годы научился водить стервятник и несколько различных автомобилей. В 2488 году Рейнор со своим другом Томасом Омером отправились в армию Конфедерации, едва окончив школу. Рейнор получил звания младшего капрала, когда познакомился с Тайкусом Финдли в форте "Хау". В 2489 году Хавьер Вандерспул предал Тайкуса и Джима. Он сделал их скафандры неисправными и отправил в бой. К счастью они узнали об этом и отправились требовать объяснения от полковника. Их встретил десяток солдат и началась перестрелка. В которой все члены отряда "Небесные дьяволы" были убиты за исключением Рика Кидда, Тайкуса Финдли и Джеймса Рейнора. Со стороны Хавьера было потеряно всего три солдата и полковник был ранен в грудную клетку. Финдли и Рейнор решили, что он умер от раны, и убежали от места перестрелки. Угнав стервятники, они смогли оторваться. И с того дня бывшие члены "Небесных дьяволов" жили в бегах. Шесть лет спустя Джим был головой бандитской шайкой, а Тайкус — силой. Они добились не малых высот выполняя поручения криминальных боссов. Они узнают, что Вандерспул жив и горит желанием мести. Полковник нанял наемника Иезекииля Дуна. Бывший полковник со своим наемников встретились с Рейнором и Финдли. Дун напал на Финдли и чуть не сломал ему шею, как Рейнор бросил в него банку с кислотой. Наёмник почувствовал адскую боль. Джеймс вынул пистолет посмотрел глубоко в глаза Хавьера и выстрелил. В тот момент на подмогу прибыла полиция. Тайкус стрельнул в Хавьера, чтоб добить наверняка, и побежал от полиции. На стервятнике они смогли скрыться.
+
+На следующей вылазке наемник Дун появился снова. Он беспощадно расстреливал в сторону Рейнора, но Финдли уже убил его. Но к тому моменту опять появилась полиция. Они готовились сесть на стервятник, но осознали, что наемник вывел его из строя. В итоге Тайкус был арестован, а Джим оставил свою преступную деятельность в прошлом. В 2496 году Джеймса Рейнора назначают шерифом колонии на Мар-Саре. В том году у него рождается сын Джонни Рейнор. В середине 2499 года Джонни забирают службы безопасности Конфедерации. Затем ему сообщают, что его сын погиб в аварии.
+
+В возрасте 29 лет бывший офицер морской пехоты Конфедерации, служил в элитном отряде "Небесные дьяволы" и участвовал в войне "Гильдий". После войны участвовал в ряде криминальных дел со своим бывшим сослуживцем по армии Тайкусом Финдли. После того как банду арестовали власти Конфедерации, Рейнор остался на свободе и стал шерифом на Мар-Саре. Адъютант приказала магистрату колонии найти Рейнора, и эвакуировать людей. Рейнор возглавил небольшой отряд и начал самолично уничтожать зергов на Мар-Саре. Вследствие уничтожения Рейнором зараженного командного центра терранов, генерал Эдмунд Дюк приказал арестовать его, после чего Рейнор был спасен повстанческим движением "Сыны Корхала", протестующей против режима Конфедерации. Присоединившись к повстанцам, он выполнил несколько заданиях (захватил чертежи пси-эмиттера, спас генерала Дюка и уничтожил базу конфедератов на Антиге Прайм). После того как зерги вторглись на Тарсонис — столицу Конфедерации и, как Арктур Менгск бросил лейтенанта Керриган на растерзание зергам, Рейнор угнал флагманский крейсер "Гиперион" вместе с бывшем магистратом, по пути уничтожив ионную пушку .
+
+Позднее он знакомится c бывшем вершителем Тассадаром, тёмным прелатом Зератулом, вершителем и Фениксом, с которым связала крепкая дружба. Рейнор в союзе с протоссами помогает уничтожить Сверхразум. Во времена Войны стаи Рейнор вместе с протоссами (Рашжагал, Зератулом и Фениксом), а так же со старыми знакомыми Арктуром Менгском и Королевой Клинков сражается против Объединенного Земного Директората. В течение четырёх лет после войны он устраивал восстания против Доминиона и его императора Менгска.</string>
+                    <color key="textColor" systemColor="labelColor"/>
+                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Шайло" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mZH-gr-FDx">
+                    <rect key="frame" x="218" y="134" width="176" height="31"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" systemColor="systemBlueColor"/>
+                    <color key="tintColor" systemColor="linkColor"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemGray6Color"/>
+            <color key="tintColor" systemColor="secondarySystemFillColor"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="imagineView" destination="0sb-ey-Iwe" id="54X-oD-H8t"/>
+                <outlet property="oneLabel" destination="LR2-42-EJD" id="jLP-Gm-oIH"/>
+                <outlet property="textView" destination="v4x-br-4p4" id="Wnq-0Y-pZQ"/>
+                <outlet property="threeLabel" destination="mZH-gr-FDx" id="ojf-r9-EPy"/>
+                <outlet property="twoLabel" destination="7Yd-pC-itA" id="igk-2a-dvg"/>
+            </connections>
+            <point key="canvasLocation" x="224.63768115942031" y="-61.607142857142854"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Image" width="800" height="500"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="secondarySystemFillColor">
+            <color red="0.47058823529411764" green="0.47058823529411764" blue="0.50196078431372548" alpha="0.16" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
