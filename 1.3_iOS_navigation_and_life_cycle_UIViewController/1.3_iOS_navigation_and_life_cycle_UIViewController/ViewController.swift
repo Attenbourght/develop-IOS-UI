@@ -7,18 +7,12 @@
 
 import UIKit
 
-struct Post {
-    var title : String
-}
-
-
 class ViewController: UIViewController {
-
-    var post = Post(title: "Пост")
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .systemBackground
+        view.backgroundColor = .white
         setupLayout()
     }
     
@@ -26,7 +20,7 @@ class ViewController: UIViewController {
         let stackView = UIStackView()
         stackView.translatesAutoresizingMaskIntoConstraints = false
         stackView.axis = .vertical
-        stackView.spacing = 10
+        stackView.spacing = 12
         return stackView
     }()
     
@@ -34,23 +28,23 @@ class ViewController: UIViewController {
         let firstButton = UIButton()
         firstButton.translatesAutoresizingMaskIntoConstraints = false
         firstButton.setTitle("Тут все таки могла быть реклама!", for: .normal)
-        firstButton.backgroundColor = .systemGray
-        firstButton.layer.cornerRadius = 12
+        firstButton.backgroundColor = UIColor(hex: 0x4885CC)
+        firstButton.layer.cornerRadius = 10
         firstButton.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
         return firstButton
     }()
     
     @objc func buttonAction(sender: UIButton!) {
-        self.navigationController?.pushViewController(NewViewController(), animated: true)
+        self.navigationController?.pushViewController(PostViewController(), animated: true)
     }
-
+    
     
     private lazy var secondButton: UIButton = {
         let secondButton = UIButton()
         secondButton.translatesAutoresizingMaskIntoConstraints = false
         secondButton.setTitle("Вторая кнопка", for: .normal)
-        secondButton.backgroundColor = .systemGray
-        secondButton.layer.cornerRadius = 12
+        secondButton.backgroundColor = UIColor(hex: 0x4885CC)
+        secondButton.layer.cornerRadius = 10
         secondButton.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
         return secondButton
     }()
@@ -64,9 +58,9 @@ class ViewController: UIViewController {
             stackView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 16),
             stackView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -16),
             stackView.heightAnchor.constraint(equalToConstant: 110),
-           
+            
             firstButton.heightAnchor.constraint(equalToConstant: 50),
-           
+            
             secondButton.heightAnchor.constraint(equalToConstant: 50)
         ])
     }
