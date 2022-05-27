@@ -45,7 +45,7 @@ class ProfileHeaderView: UIView {
         fullNameLabel.translatesAutoresizingMaskIntoConstraints = false
         fullNameLabel.text = "Zealot"
         fullNameLabel.textColor = .black
-        fullNameLabel.font = UIFont.systemFont(ofSize: 18, weight: .bold)
+        fullNameLabel.font = UIFont.systemFont(ofSize: 16, weight: .bold)
         return fullNameLabel
     }()
     
@@ -76,7 +76,7 @@ class ProfileHeaderView: UIView {
     
     @objc private func buttonAction() {
         statusLabel.text = statusText
-        statusTextField.text = "Введите статус..."
+        statusTextField.text = ""
         self.endEditing(true)
         print(statusText)
     }
@@ -85,13 +85,13 @@ class ProfileHeaderView: UIView {
         let statusTextField = UITextField()
         statusTextField.translatesAutoresizingMaskIntoConstraints = false
         statusTextField.indent(size: 10)
-        statusTextField.text = "Введите новый статус..."
+        statusTextField.placeholder = "Введите новый статус..."
         statusTextField.textColor = .black
         statusTextField.font = UIFont.systemFont(ofSize: 15, weight: .regular)
         statusTextField.backgroundColor = .white
         statusTextField.layer.borderWidth = 1
         statusTextField.layer.borderColor = UIColor.black.cgColor
-        statusTextField.layer.cornerRadius = 12
+        statusTextField.layer.cornerRadius = 10
         statusTextField.addTarget(self, action: #selector(statusTextChanges), for: .editingChanged)
         return statusTextField
     }()
