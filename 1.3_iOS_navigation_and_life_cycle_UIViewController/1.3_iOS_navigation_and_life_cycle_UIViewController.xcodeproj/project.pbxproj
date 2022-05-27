@@ -11,6 +11,7 @@
 		996800C3283D7F3C00D583E6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996800C2283D7F3C00D583E6 /* ViewController.swift */; };
 		996800C8283D7F3E00D583E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 996800C7283D7F3E00D583E6 /* Assets.xcassets */; };
 		996800CB283D7F3E00D583E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 996800C9283D7F3E00D583E6 /* LaunchScreen.storyboard */; };
+		9986B493284088BB00D2A2AB /* LogoInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9986B492284088BB00D2A2AB /* LogoInViewController.swift */; };
 		9993334F283D9D60007D2ACF /* NewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9993334E283D9D60007D2ACF /* NewViewController.swift */; };
 		9999B828283DBA4000558B4E /* TwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9999B827283DBA4000558B4E /* TwoViewController.swift */; };
 		999E907D283DAE340053A9A2 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999E907C283DAE340053A9A2 /* TabBar.swift */; };
@@ -26,6 +27,7 @@
 		996800C7283D7F3E00D583E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		996800CA283D7F3E00D583E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		996800CC283D7F3E00D583E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9986B492284088BB00D2A2AB /* LogoInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoInViewController.swift; sourceTree = "<group>"; };
 		9993334E283D9D60007D2ACF /* NewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewViewController.swift; sourceTree = "<group>"; };
 		9999B827283DBA4000558B4E /* TwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoViewController.swift; sourceTree = "<group>"; };
 		999E907C283DAE340053A9A2 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 			children = (
 				99FC83B2284033D6006F8998 /* ProfileHeaderView.swift */,
 				99FC83B428403408006F8998 /* ProfileViewController.swift */,
+				9986B492284088BB00D2A2AB /* LogoInViewController.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -157,6 +160,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9986B493284088BB00D2A2AB /* LogoInViewController.swift in Sources */,
 				9999B828283DBA4000558B4E /* TwoViewController.swift in Sources */,
 				99FC83B3284033D6006F8998 /* ProfileHeaderView.swift in Sources */,
 				996800C3283D7F3C00D583E6 /* ViewController.swift in Sources */,
