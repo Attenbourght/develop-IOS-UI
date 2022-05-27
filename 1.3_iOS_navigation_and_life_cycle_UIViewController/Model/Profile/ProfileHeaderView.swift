@@ -62,14 +62,14 @@ class ProfileHeaderView: UIView {
     private lazy var setStatusButton: UIButton = {
         let setStatusButton = UIButton()
         setStatusButton.translatesAutoresizingMaskIntoConstraints = false
-        setStatusButton.backgroundColor = .systemBlue
+        setStatusButton.backgroundColor = UIColor(hex: 0x4885CC)
         setStatusButton.setTitle("Статус", for: .normal)
         setStatusButton.setTitleColor(UIColor.white, for: .normal)
-        setStatusButton.layer.cornerRadius = 12
-        setStatusButton.layer.shadowOffset = CGSize(width: 4, height: 4)
-        setStatusButton.layer.shadowRadius = 4
-        setStatusButton.layer.shadowColor = UIColor.black.cgColor
-        setStatusButton.layer.shadowOpacity = 0.7
+        setStatusButton.layer.cornerRadius = 10
+        //        setStatusButton.layer.shadowOffset = CGSize(width: 4, height: 4)
+        //        setStatusButton.layer.shadowRadius = 4
+        //        setStatusButton.layer.shadowColor = UIColor.black.cgColor
+        //        setStatusButton.layer.shadowOpacity = 0.7
         setStatusButton.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
         return setStatusButton
     }()
@@ -117,7 +117,7 @@ class ProfileHeaderView: UIView {
             statusLabel.trailingAnchor.constraint(equalTo: safeAreaLayoutGuide.trailingAnchor, constant: -16),
             statusLabel.bottomAnchor.constraint(equalTo: setStatusButton.topAnchor, constant: -64),            statusTextField.leadingAnchor.constraint(equalTo: avatarImageView.trailingAnchor, constant: 16),
             statusTextField.trailingAnchor.constraint(equalTo: safeAreaLayoutGuide.trailingAnchor, constant: -16),
-            statusTextField.topAnchor.constraint(equalTo: statusLabel.bottomAnchor, constant: 8),
+            statusTextField.topAnchor.constraint(equalTo: statusLabel.bottomAnchor, constant: 10),
             statusTextField.heightAnchor.constraint(equalToConstant: 40),
             setStatusButton.leadingAnchor.constraint(equalTo: safeAreaLayoutGuide.leadingAnchor, constant: 16),
             setStatusButton.topAnchor.constraint(equalTo: avatarImageView.bottomAnchor, constant: 28),
