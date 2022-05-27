@@ -10,7 +10,7 @@ import UIKit
 class Tabbar: UITabBarController {
     
     let UINCOne = ViewController()
-    let UINCTwo = NewViewController()
+    let UINCTwo = ProfileViewController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,14 +18,18 @@ class Tabbar: UITabBarController {
     }
     
     private func setupControllers() {
-        UINCOne.tabBarItem.title = "Первый"
+        
         let nControllerOne = UINavigationController(rootViewController: UINCOne)
-        UINCOne.navigationItem.title = "Light Gray"
-        UINCOne.tabBarItem.image = UIImage(systemName: "arrow.left.to.line")
-        UINCTwo.tabBarItem.title = "Второй"
         let nControllerTwo = UINavigationController(rootViewController: UINCTwo)
-        UINCTwo.tabBarItem.image = UIImage(systemName: "arrow.right.to.line")
-        UINCTwo.navigationItem.title = "Space Gray"
+        
+        
+        UINCOne.tabBarItem.title = "Назад"
+        UINCOne.tabBarItem.image = UIImage(systemName: "house.fill")
+        UINCOne.navigationItem.title = "Назад"
+        
+        UINCTwo.tabBarItem.title = "Профиль"
+        UINCTwo.tabBarItem.image = UIImage(systemName: "person.fill")
+        UINCTwo.navigationItem.title = "Профиль"
         viewControllers = [nControllerOne, nControllerTwo]
     }
     

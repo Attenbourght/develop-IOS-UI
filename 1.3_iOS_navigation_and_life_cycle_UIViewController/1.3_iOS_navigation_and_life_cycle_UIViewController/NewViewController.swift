@@ -9,27 +9,25 @@ import UIKit
 
 class NewViewController: UIViewController {
     
+    var postTitle: String = "Пост"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.title = postTitle
         view.backgroundColor = .white
-        twoButton()
+        makeBarItem()
+        
     }
-    private func twoButton() {
-        let twoButton = UIButton(frame: CGRect(x: 0, y: 0, width: 400, height: 80))
-        twoButton.center = view.center
-        twoButton.setTitle("Hello World!", for: .normal)
-        twoButton.backgroundColor = .black
-        twoButton.addTarget(self, action: #selector(tapActionTwo), for: .touchUpInside )
-        view.addSubview(twoButton)
+    private func makeBarItem() {
+        let rightBarItem = UIBarButtonItem(title: "Информация", style: .plain, target: self, action: #selector(buttonAction))
+        self.navigationItem.title = postTitle
+        navigationItem.rightBarButtonItem = rightBarItem
     }
     
-    private func maketBarItem() {
-        let barItem = UIBarButtonItem(title: "Назад", style: .plain, target: self, action: #selector(tapActionTwo))
-        navigationItem.leftBarButtonItem = barItem
+    @objc private func buttonAction() {
+        let infoView = TwoViewController()
+        navigationController?.pushViewController(infoView, animated: true)
     }
-    @objc private func tapActionTwo() {
-        let vc = ViewController()
-        vc.title = "Назад"
-        navigationController?.pushViewController(vc, animated: true)
-    }
+
+    
 }

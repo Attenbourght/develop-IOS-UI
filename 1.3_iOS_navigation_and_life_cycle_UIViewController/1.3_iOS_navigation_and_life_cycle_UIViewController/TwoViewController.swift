@@ -11,27 +11,34 @@ class TwoViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .yellow
-        niceButton()
-        
+        view.backgroundColor = .systemBackground
+        self.navigationItem.title = "Информация"
+        makeButton()
     }
-    private func niceButton() {
-        let oneButton = UIButton(frame: CGRect(x: 0, y: 0, width: 400, height: 80))
-        oneButton.center = view.center
-        oneButton.setTitle("Что-то пошло не так. Нажми еще раз .-. ", for: .normal)
-        oneButton.backgroundColor = .black
-        oneButton.addTarget(self, action: #selector(tapAction), for: .touchUpInside )
-        view.addSubview(oneButton)
+    
+    private func makeButton() {
+        let alertButton = UIButton(frame: CGRect(x: 0, y: 0, width: 200, height: 40))
+        alertButton.center = view.center
+        alertButton.setTitle("Изменить", for: .normal)
+        alertButton.backgroundColor = .darkGray
+        alertButton.layer.cornerRadius = 4
+        alertButton.addTarget(self, action: #selector(tapAlertAction), for: .touchUpInside)
+        view.addSubview(alertButton)
     }
-    @objc private func tapAction() {
-        let alert = UIAlertController(title: "Time to choose!", message: "" , preferredStyle: .alert)
-       let okAction = UIAlertAction(title: "Вернуться назад?", style: .default) { _ in
-           self.dismiss(animated: true)
-           //self.navigationController?.popViewController(animated: true)
+    
+    @objc private func tapAlertAction () {
+        let alert = UIAlertController(title: "Информация изменена", message: "Сохранить?", preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "Да", style: .default) {_ in
+            print("Запись изменена")
+            // self.dismiss(animated: true)
+            self.navigationController?.popViewController(animated: true)
         }
-        let cancelAction = UIAlertAction(title: "Остаемся?", style:.default)
+        let cancelAction = UIAlertAction(title: "Отмена", style: .destructive) { _ in
+            print("Отмена действия")
+        }
         alert.addAction(cancelAction)
         alert.addAction(okAction)
-        present(alert, animated: true)
+        present(alert, animated: false)
     }
+
 }

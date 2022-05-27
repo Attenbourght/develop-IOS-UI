@@ -7,26 +7,36 @@
 
 import UIKit
 
+struct Post {
+    var title : String
+}
+
+
 class ViewController: UIViewController {
 
+    var post = Post(title: "Пост")
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .lightGray
-        firstButton()
-    }
-    private func firstButton() {
-        let button = UIButton(frame: CGRect(x: 0, y: 0, width: 400, height: 40))
-        button.center = view.center
-        button.setTitle("Тут могла быть ваша реклама", for: .normal)
-        button.backgroundColor = .black
-        button.addTarget(self, action: #selector(tapAction), for: .touchUpInside)
-        view.addSubview(button)
+        view.backgroundColor = .systemBackground
+        makeButton()
     }
     
-    @objc private func tapAction() {
-        let InfoViewController = TwoViewController()
-        present( InfoViewController , animated: true)
+    private func makeButton() {
+        let button = UIButton(frame: CGRect(x: 0, y: 0, width: 200, height: 40))
+        button.center = view.center
+        button.setTitle("Пост", for: .normal)
+        button.backgroundColor = .systemGray
+        button.layer.cornerRadius = 4
+        button.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
+        view.addSubview(button)
     }
 
+    @objc private func buttonAction() {
+        let postView = NewViewController()
+        postView.postTitle = post.title
+        navigationController?.pushViewController(postView, animated: true)
+    }
 }
+
 
