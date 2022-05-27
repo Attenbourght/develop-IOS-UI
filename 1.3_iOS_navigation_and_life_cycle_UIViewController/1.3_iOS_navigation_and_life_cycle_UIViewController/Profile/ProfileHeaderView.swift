@@ -7,13 +7,6 @@
 
 import UIKit
 
-extension UITextField {
-    func indent(size:CGFloat) {
-        self.leftView = UIView(frame: CGRect(x: self.frame.minX, y: self.frame.minY, width: size, height: self.frame.height))
-        self.leftViewMode = .always
-    }
-}
-
 class ProfileHeaderView: UIView {
     
     override init(frame: CGRect) {
@@ -43,7 +36,7 @@ class ProfileHeaderView: UIView {
     private lazy var fullNameLabel: UILabel = {
         let fullNameLabel = UILabel()
         fullNameLabel.translatesAutoresizingMaskIntoConstraints = false
-        fullNameLabel.text = "Zealot"
+        fullNameLabel.text = "Zealot1"
         fullNameLabel.textColor = .black
         fullNameLabel.font = UIFont.systemFont(ofSize: 16, weight: .bold)
         return fullNameLabel
@@ -124,5 +117,22 @@ class ProfileHeaderView: UIView {
             setStatusButton.trailingAnchor.constraint(equalTo: safeAreaLayoutGuide.trailingAnchor, constant: -16),
             setStatusButton.heightAnchor.constraint(equalToConstant: 50)
         ])
+    }
+}
+
+
+extension UITextField {
+    func indent(size:CGFloat) {
+        self.leftView = UIView(frame: CGRect(x: self.frame.minX, y: self.frame.minY, width: size, height: self.frame.height))
+        self.leftViewMode = .always
+    }
+}
+
+
+
+extension ProfileHeaderView: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.endEditing(true)
+        return true
     }
 }

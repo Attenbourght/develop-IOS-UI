@@ -7,9 +7,9 @@
 
 import UIKit
 
+let colorSet = UIColor(hex: 0x4885CC)
+
 class Tabbar: UITabBarController {
-    
-    let colorSet = UIColor(hex: 0x4885CC)
     let feedView = ViewController()
     let logInView = LogInViewController()
     
