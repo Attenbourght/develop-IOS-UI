@@ -1,13 +1,13 @@
 //
-//  ViewController.swift
+//  FeedViewController.swift
 //  1.3_iOS_navigation_and_life_cycle_UIViewController
 //
-//  Created by Никита Спевак on 25.05.2022.
+//  Created by Никита Спевак on 28.05.2022.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
+class FeedViewController: UIViewController {
     
     
     override func viewDidLoad() {

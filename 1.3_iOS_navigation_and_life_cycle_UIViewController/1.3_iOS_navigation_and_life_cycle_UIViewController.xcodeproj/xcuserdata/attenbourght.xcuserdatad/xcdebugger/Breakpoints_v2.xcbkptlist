@@ -7,33 +7,33 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "C5BD5D87-150F-4D18-A640-CBD0F7BA3683"
+            uuid = "FCA865D6-DA36-4E24-89FD-99C7BC35514C"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "1.3_iOS_navigation_and_life_cycle_UIViewController/AppDelegate.swift"
+            filePath = "1.3_iOS_navigation_and_life_cycle_UIViewController/Profile/PostTableViewCell.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "15"
-            endingLineNumber = "15"
-            landmarkName = "application(_:didFinishLaunchingWithOptions:)"
-            landmarkType = "7">
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "authorLabel"
+            landmarkType = "24">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "34A400A7-93E5-4AC4-8D5C-76F2DA45E951"
-            shouldBeEnabled = "Yes"
+            uuid = "182C6C1A-96A9-4E01-957D-CEE864E32540"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "1.3_iOS_navigation_and_life_cycle_UIViewController/AppDelegate.swift"
+            filePath = "1.3_iOS_navigation_and_life_cycle_UIViewController/Profile/PostTableViewCell.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "7"
-            endingLineNumber = "7"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "authorLabel"
+            landmarkType = "24">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

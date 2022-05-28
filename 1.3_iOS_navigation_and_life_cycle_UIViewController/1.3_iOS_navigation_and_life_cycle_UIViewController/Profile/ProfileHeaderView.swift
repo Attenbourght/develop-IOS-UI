@@ -36,7 +36,7 @@ class ProfileHeaderView: UIView {
     private lazy var fullNameLabel: UILabel = {
         let fullNameLabel = UILabel()
         fullNameLabel.translatesAutoresizingMaskIntoConstraints = false
-        fullNameLabel.text = "Zealot1"
+        fullNameLabel.text = "Zealot"
         fullNameLabel.textColor = .black
         fullNameLabel.font = UIFont.systemFont(ofSize: 16, weight: .bold)
         return fullNameLabel

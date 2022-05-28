@@ -9,13 +9,13 @@ import UIKit
 
 let colorSet = UIColor(hex: 0x4885CC)
 
-class Tabbar: UITabBarController {
-    let feedView = ViewController()
+class TabBar: UITabBarController {
+    let feedView = FeedViewController()
     let logInView = LogInViewController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .white
+        view.backgroundColor = .systemBackground
         self.view.tintColor = UIColor(ciColor: .init(color: colorSet))
         setupControllers()
     }
@@ -23,19 +23,21 @@ class Tabbar: UITabBarController {
     private func setupControllers() {
         
         let feedNavigationController = UINavigationController(rootViewController: feedView)
-        let LogInViewController = UINavigationController(rootViewController: logInView)
+        let logInViewController = UINavigationController(rootViewController: logInView)
         
-        feedView.tabBarItem.title = "Назад"
+        feedView.tabBarItem.title = "Feed"
         feedView.tabBarItem.image = UIImage(systemName: "house.fill")
-        feedView.navigationItem.title = "Назад"
+        feedView.navigationItem.title = "Feed"
         
-        logInView.tabBarItem.title = "Профиль"
+        logInView.tabBarItem.title = "Profile"
         logInView.tabBarItem.image = UIImage(systemName: "person.fill")
-        logInView.navigationItem.title = "Профиль"
-        viewControllers = [feedNavigationController, LogInViewController]
+        logInView.navigationItem.title = "Profile"
+        
+        viewControllers = [feedNavigationController, logInViewController]
     }
-    
 }
+
+// MARK: - перевод цвета из HEX в RGB для UIColor
 extension UIColor {
     convenience init(hex: Int) {
         let components = (

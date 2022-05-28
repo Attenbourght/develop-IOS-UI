@@ -27,7 +27,7 @@ class PhotosTableViewCell: UITableViewCell {
     private var rightArrowImageView: UIImageView = {
         $0.translatesAutoresizingMaskIntoConstraints = false
         $0.image = UIImage(systemName: "arrow.right")?.withTintColor(.black, renderingMode: .alwaysOriginal)
-        // $0.contentMode = .scaleAspectFit
+        $0.contentMode = .scaleAspectFit
         $0.sizeToFit()
         $0.clipsToBounds = false
         return $0

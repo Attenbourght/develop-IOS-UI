@@ -5,7 +5,7 @@
 //  Created by Никита Спевак on 27.05.2022.
 //
 
-import Foundation
+import UIKit
 
 struct PostModel {
     var author: String

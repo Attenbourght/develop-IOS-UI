@@ -1,22 +1,21 @@
 //
-//  TwoViewController.swift
+//  InfoViewController.swift
 //  1.3_iOS_navigation_and_life_cycle_UIViewController
 //
-//  Created by Никита Спевак on 25.05.2022.
+//  Created by Никита Спевак on 28.05.2022.
 //
 
 import UIKit
 
-class TwoViewController: UIViewController {
+class InfoViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .systemBackground
+        view.backgroundColor = .white
         self.navigationItem.title = "Информация"
         makeButton()
     }
-    
-    private func makeButton() {
+     private func makeButton() {
         let alertButton = UIButton(frame: CGRect(x: 0, y: 0, width: 200, height: 40))
         alertButton.center = view.center
         alertButton.setTitle("Изменить", for: .normal)

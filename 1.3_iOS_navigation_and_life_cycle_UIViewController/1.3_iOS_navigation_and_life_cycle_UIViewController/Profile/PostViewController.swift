@@ -25,7 +25,7 @@ class PostViewController: UIViewController {
     }
     
     @objc private func buttonAction() {
-        let infoView = TwoViewController()
+        let infoView = InfoViewController()
         navigationController?.pushViewController(infoView, animated: true)
     }
     

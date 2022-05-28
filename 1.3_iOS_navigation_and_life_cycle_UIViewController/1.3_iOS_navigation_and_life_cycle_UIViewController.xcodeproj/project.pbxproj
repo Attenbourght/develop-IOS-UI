@@ -9,11 +9,11 @@
 /* Begin PBXBuildFile section */
 		9935B0BE28417D3E00BC1961 /* Photos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9935B0BD28417D3E00BC1961 /* Photos.swift */; };
 		996800BF283D7F3C00D583E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996800BE283D7F3C00D583E6 /* AppDelegate.swift */; };
-		996800C3283D7F3C00D583E6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996800C2283D7F3C00D583E6 /* ViewController.swift */; };
 		996800C8283D7F3E00D583E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 996800C7283D7F3E00D583E6 /* Assets.xcassets */; };
 		996800CB283D7F3E00D583E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 996800C9283D7F3E00D583E6 /* LaunchScreen.storyboard */; };
 		9986B493284088BB00D2A2AB /* LogoInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9986B492284088BB00D2A2AB /* LogoInViewController.swift */; };
-		9999B828283DBA4000558B4E /* TwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9999B827283DBA4000558B4E /* TwoViewController.swift */; };
+		998F6DC72841FB3100D6F1BA /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998F6DC62841FB3100D6F1BA /* FeedViewController.swift */; };
+		998F6DC92841FF1900D6F1BA /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998F6DC82841FF1900D6F1BA /* InfoViewController.swift */; };
 		999E907D283DAE340053A9A2 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999E907C283DAE340053A9A2 /* TabBar.swift */; };
 		99B4468C2841078B00096F3C /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B4468B2841078B00096F3C /* PostViewController.swift */; };
 		99B4468E284107E900096F3C /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B4468D284107E900096F3C /* PostTableViewCell.swift */; };
@@ -31,12 +31,12 @@
 		9935B0BD28417D3E00BC1961 /* Photos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photos.swift; sourceTree = "<group>"; };
 		996800BB283D7F3C00D583E6 /* 1.3_iOS_navigation_and_life_cycle_UIViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 1.3_iOS_navigation_and_life_cycle_UIViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		996800BE283D7F3C00D583E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		996800C2283D7F3C00D583E6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		996800C7283D7F3E00D583E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		996800CA283D7F3E00D583E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		996800CC283D7F3E00D583E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9986B492284088BB00D2A2AB /* LogoInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoInViewController.swift; sourceTree = "<group>"; };
-		9999B827283DBA4000558B4E /* TwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoViewController.swift; sourceTree = "<group>"; };
+		998F6DC62841FB3100D6F1BA /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		998F6DC82841FF1900D6F1BA /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		999E907C283DAE340053A9A2 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		99B4468B2841078B00096F3C /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		99B4468D284107E900096F3C /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PostTableViewCell.swift; path = ../Profile/PostTableViewCell.swift; sourceTree = "<group>"; };
@@ -94,9 +94,9 @@
 				99B4469128410D2800096F3C /* Model */,
 				9935B0BC28417ACB00BC1961 /* Cell */,
 				99FC83B1284033B1006F8998 /* Profile */,
-				9999B827283DBA4000558B4E /* TwoViewController.swift */,
+				998F6DC62841FB3100D6F1BA /* FeedViewController.swift */,
 				9986B492284088BB00D2A2AB /* LogoInViewController.swift */,
-				996800C2283D7F3C00D583E6 /* ViewController.swift */,
+				998F6DC82841FF1900D6F1BA /* InfoViewController.swift */,
 				99FC83B628403D33006F8998 /* SceneDelegate.swift */,
 				999E907C283DAE340053A9A2 /* TabBar.swift */,
 				996800BE283D7F3C00D583E6 /* AppDelegate.swift */,
@@ -200,12 +200,12 @@
 				99C6308528418122005FB391 /* PhotosTableViewCell.swift in Sources */,
 				99B4468E284107E900096F3C /* PostTableViewCell.swift in Sources */,
 				9986B493284088BB00D2A2AB /* LogoInViewController.swift in Sources */,
-				9999B828283DBA4000558B4E /* TwoViewController.swift in Sources */,
 				99FC83B3284033D6006F8998 /* ProfileHeaderView.swift in Sources */,
 				99B4469328410D3A00096F3C /* Post.swift in Sources */,
-				996800C3283D7F3C00D583E6 /* ViewController.swift in Sources */,
 				99B4468C2841078B00096F3C /* PostViewController.swift in Sources */,
 				9935B0BE28417D3E00BC1961 /* Photos.swift in Sources */,
+				998F6DC92841FF1900D6F1BA /* InfoViewController.swift in Sources */,
+				998F6DC72841FB3100D6F1BA /* FeedViewController.swift in Sources */,
 				99B44690284108B700096F3C /* ExtensionUIView.swift in Sources */,
 				996800BF283D7F3C00D583E6 /* AppDelegate.swift in Sources */,
 				99FC83B528403408006F8998 /* ProfileViewController.swift in Sources */,

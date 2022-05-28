@@ -33,6 +33,7 @@ struct PhotosModel {
         model.append(PhotosModel(author: "Zealot", image: "18"))
         model.append(PhotosModel(author: "Zealot", image: "19"))
         model.append(PhotosModel(author: "Zealot", image: "20"))
+        model.append(PhotosModel(author: "Zealot", image: "21"))
         return model
     }
 }
