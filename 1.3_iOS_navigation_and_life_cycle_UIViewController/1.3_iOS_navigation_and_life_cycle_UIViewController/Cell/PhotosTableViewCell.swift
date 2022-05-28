@@ -114,22 +114,22 @@ class PhotosTableViewCell: UITableViewCell {
         [photosView, photosLabel, rightArrowImageView, stackView].forEach { contentView.addSubview($0) }
         
         NSLayoutConstraint.activate([
-            // photosView
+            
             photosView.topAnchor.constraint(equalTo: contentView.topAnchor),
             photosView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
             photosView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
             photosView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor),
-            // photosLabel
+            
             photosLabel.topAnchor.constraint(equalTo: photosView.topAnchor, constant: firstInset),
             photosLabel.leadingAnchor.constraint(equalTo: photosView.leadingAnchor, constant: firstInset),
             photosLabel.trailingAnchor.constraint(equalTo: photosView.trailingAnchor, constant: -firstInset),
-            // rightArrowImageView
+            
             rightArrowImageView.topAnchor.constraint(equalTo: photosView.topAnchor, constant: firstInset),
             rightArrowImageView.centerYAnchor.constraint(equalTo: photosLabel.centerYAnchor),
             rightArrowImageView.trailingAnchor.constraint(equalTo: photosView.trailingAnchor, constant: -firstInset),
             rightArrowImageView.widthAnchor.constraint(equalToConstant: 24),
             rightArrowImageView.heightAnchor.constraint(equalToConstant: 28),
-            // stackView
+            
             stackView.topAnchor.constraint(equalTo: photosLabel.bottomAnchor, constant: firstInset),
             stackView.leadingAnchor.constraint(equalTo: photosView.leadingAnchor, constant: firstInset),
             stackView.trailingAnchor.constraint(equalTo: photosView.trailingAnchor, constant: -firstInset),
